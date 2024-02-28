@@ -2,6 +2,126 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+.language {
+    background-color: #EA7B61;
+    height: 100%;
+    color: #000;
+    position: relative;
+    justify-content: center;
+    width: 140px;
+    font-weight: bold;
+}
+.language-selected-fr {
+    justify-content: center;
+    display: flex;   
+    align-items: center;
+    cursor: pointer;
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+.language-selected-fr:before {
+    border-radius: 10px;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/fr.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-color: #E4E4E4;
+}
+.language-selected-en {
+    justify-content: center;
+    display: flex;   
+    align-items: center;
+    cursor: pointer;
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+.language-selected-en:before {
+    border-radius: 10px;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/uk.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-color: #E4E4E4;
+}
+.language-selected-es {
+    justify-content: center;
+    display: flex;   
+    align-items: center;
+    cursor: pointer;
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+.language-selected-es:before {
+    border-radius: 10px;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/es.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-color: #E4E4E4;
+}
+.language ul {
+    margin: 0;
+    top: 0;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    padding: 0%;
+    background-color: #E4E4E4;
+    padding-top: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.language ul li {
+    list-style: none;
+}
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px;
+}
+.language ul li:hover {
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.français:before {
+    background-image: url(./images/fr.webp);
+}
+a.english:before {
+    background-image: url(./images/uk.webp);
+}
+a.español:before {
+    background-image: url(./images/es.webp);
+}
+#follow-scroll {
+    position: relative;
+    top: 0;
+    right: 20px;
+    transition: top 0.3s ease;
+    transition:  margin-top 0.3s ease;
+} 
 .nav-resp{
     display: none;
 }
@@ -27,7 +147,7 @@ body {
 .navbar-buttons a{
     margin-left: 1%;
     margin-right: 1%;
-    font-size: larger;
+    font-size: x-large;
     font-family: 'Poppins', sans-serif;
 }
 .div-logo{
@@ -50,7 +170,6 @@ body {
 }
 .logo-b h5{
     margin: 0%;
-    font-family: 'Rozha One', sans-serif;
 }
 .navbar-buttons{
     justify-content: center;
@@ -68,10 +187,13 @@ body {
     color: black;
     padding: 5px;
     font-size: 16px;
+    align-items: center;
+    justify-content: center;
 }
 .presentacion{
     background-color: #EA7B61;
-    height: 800px;
+    /*height: 800px;*/
+    height: 62vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -79,6 +201,7 @@ body {
     background-image: url('./images/presentacion.webp');
     background-position: right top;
     background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 .presentacion-a{
     display: flex;
@@ -207,7 +330,7 @@ body {
     margin: 0%;
     margin-right: 30px;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 30px;
     letter-spacing: 3px;
 }
@@ -380,7 +503,7 @@ body {
 .testimonios-a-a h3{
     margin-left: 8%;
     margin-right: 8%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight:400;
     font-size: 16px;
 }
@@ -817,6 +940,7 @@ input[type="email"] {
         font-size: 13px;
     }
     .logo-b h5 {
+        font-family: 'Poppins', sans-serif;
         font-size: 9px;
     }
 }

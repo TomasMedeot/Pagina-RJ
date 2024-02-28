@@ -6,7 +6,7 @@
     <title>Romina Juarez</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link rel="icon" href="./images/faivicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap">
 </head>
 <body>
@@ -23,11 +23,18 @@
                 </div>
             </div>
             <div class="navbar-language">
-                <select id="language-selector">
-                    <option value="español">Español</option>
-                    <option value="english">English</option>
-                    <option value="Français">Français</option>
-                </select>
+
+                <div class="language" id="language-selector2">
+                    <div class="language-selected-es" id="language-selected2">
+                        Español
+                    </div>
+                    <ul>
+                        <li><a href="" class="français">Français</a></li>
+                        <li><a href="" class="english">English</a></li>
+                        <li><a href="" class="español">Español</a></li> 
+                    </ul>
+                </div>
+
             </div>
             <button id="toggleBtn">&#9776;</button>
             <div class="sidebar" id="sidebar">
@@ -58,11 +65,17 @@
                 <a id="nav-d2" href="#contact">Contacto</a>
             </div>
             <div class="navbar-language">
-                <select id="language-selector2">
-                    <option value="español">Español</option>
-                    <option value="english">English</option>
-                    <option value="Français">Français</option>
-                </select>
+
+                <div class="language" id="language-selector">
+                    <div class="language-selected-es" id="language-selected">
+                        Español
+                    </div>
+                    <ul>
+                        <li><a href="" class="français">Français</a></li>
+                        <li><a href="" class="english">English</a></li>
+                        <li><a href="" class="español">Español</a></li> 
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
@@ -80,7 +93,14 @@
         </div>
     </div>
     <div class="presentacion-b">
-        <img src="./images/wpp.webp" alt="wpp">
+        <div id="follow-scroll">
+            <a href="https://wa.me/+33684869763">
+              <img src="./images/wpp.webp" alt="wpp">
+            </a>
+        </div>
+        <!--<a href="https://wa.me/+33684869763" style="display: flex;margin: 0;width: fit-content;height: auto;" class="" id="follow-scroll">
+            <img hr src="./images/wpp.webp" alt="wpp">
+        </a>-->
     </div>
     <!--PRESENTACION-->
 
@@ -133,10 +153,10 @@
         </div>
         <div class="data-online">
             <div class="data-online-a" style="width:max-content;">
-                <h1 id="text14">Psicologia analitica</h1>
-                <h3 id="text15">Utilizo el modelo teórico de la psicología analítica de Carl Jung, así como herramientas y técnicas concernientes a diferentes escuelas de la psicología, siempre que estas se dirijan a alcanzar nuestros objetivos terapéuticos específicos preestablecidos para dar respuesta a tu problemática, aliviando o disminuyendo los síntomas y su malestar. 
-                    En sesiones semanales cara a cara, establecemos un vínculo profundo y transformador para comprender cómo los desafíos impactan en tu crecimiento.
-                    El estilo de la terapia puede incluir rasgos psicoeducativos, técnicas expresivas y actividades a realizar entre sesiones. Enfocando en tu proceso de individuación, te acompaño hacia el desarrollo pleno de tu personalidad, integrando Complejos, incorporando habilidades y explorando tu dimensión espiritual. Juntos, navegamos a través de miedos y deseos para lograr una visión integral de tu ser, arribar a una comprensión más profunda de ti mismo y garantizar un funcionamiento emocional equilibrado.</h3>
+                <h1 id="text14">Psicología analítica</h1>
+                <h3 id="text22">Utilizo el modelo teórico de la psicología analítica de Carl Jung, así como herramientas y técnicas concernientes a diferentes escuelas de la psicología, siempre que estas se dirijan a alcanzar nuestros objetivos terapéuticos específicos preestablecidos para dar respuesta a tu problemática, aliviando o disminuyendo los síntomas y su malestar.</h3>
+                <h3 id="text23">En sesiones semanales cara a cara, establecemos un vínculo profundo y transformador para comprender cómo los desafíos impactan en tu crecimiento.</h3>
+                <h3 id="text15">El estilo de la terapia puede incluir rasgos psicoeducativos, técnicas expresivas y actividades a realizar entre sesiones. Enfocando en tu proceso de individuación, te acompaño hacia el desarrollo pleno de tu personalidad, integrando Complejos, incorporando habilidades y explorando tu dimensión espiritual. Juntos, navegamos a través de miedos y deseos para lograr una visión integral de tu ser, arribar a una comprensión más profunda de ti mismo y garantizar un funcionamiento emocional equilibrado.</h3>
                 <button class="boton" style="display: none;" id="boton-toggle">Ver mas</button>  
             </div>
             <div class="data-online-a" style="width: fit-content;  justify-content: center;">
@@ -158,7 +178,7 @@
         <div class="data-online">
             <div class="data-online-a" style="width: 55%; justify-content: center;">
                 <h1 id="text18">Terapia de parejas</h1>
-                <h3 id="text19">Este es un espacio de mediación para parejas que están pasando por un momento difícil y necesitan apoyo terapéutico o bien para reforzar aspectos sanos ya existentes en el vínculo, con el objetivo es promover una relación funcional y satisfactoria para ambos miembros de la pareja mediante el aprendizaje de elementos que resulten en un vínculo adecuado y amoroso. Durante la primera sesión se sugiere un plan de tratamiento personalizado. Las sesiones duran aproximadamente una hora. La duración del proceso y la frecuencia de las sesiones se establecen según el caso.</h3>
+                <h3 id="text19">Este es un espacio de mediación para parejas que están pasando por un momento difícil y necesitan apoyo terapéutico o bien para reforzar aspectos sanos ya existentes en el vínculo. El objetivo es promover una relación funcional y satisfactoria para ambos miembros de la pareja mediante el aprendizaje de elementos que resulten en un vínculo adecuado y amoroso. Durante la primera sesión se sugiere un plan de tratamiento personalizado. Las sesiones duran aproximadamente una hora. La duración del proceso y la frecuencia de las sesiones se establecen según el caso.</h3>
                 <button class="boton" style="display: none;" id="boton-toggle3">Ver mas</button>
             </div>
             <div class="data-online-a" style="width: 45%; align-items: center;">
@@ -261,24 +281,24 @@
             <img src="./images/contact.webp" alt="">
         </div>
         <div class="contact_webs">
-            <h4 id="webs">Seguime en</h4>
+            <h4 id="webs">Sígueme en</h4>
             <div class="social-networks">
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://www.instagram.com/psi.rojuarez/">
                   <img class="footer-image" src="./images/ig.webp" alt="ig">
                 </a>
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://www.linkedin.com/in/psirojuarez/">
                   <img class="footer-image" src="./images/lin.webp" alt="lin">
                 </a>
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://www.facebook.com/psi.r0juarez/">
                   <img class="footer-image" src="./images/face.webp" alt="face">
                 </a>
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://www.tiktok.com/@psi.rojuarez">
                   <img class="footer-image" src="./images/tiktok.webp" alt="tiktok">
                 </a>
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://www.youtube.com/@psi.rojuarez">
                     <img class="footer-image" src="./images/yt.webp" alt="yt">
                 </a>
-                <a class="a-footer-image" href="">
+                <a class="a-footer-image" href="https://twitter.com/psi_rojuarez">
                     <img class="footer-image" src="./images/tw.webp" alt="tw">
                 </a>
             </div>
@@ -286,5 +306,18 @@
     </div>
     <!--FOOTER-->
     <script src='index.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $('#language-selector').on('click', function() {
+                $(this).find('ul').toggle();
+            });
+        });
+        $(document).ready(function() {
+            $('#language-selector2').on('click', function() {
+                $(this).find('ul').toggle();
+            });
+        });
+    </script>
 </body>
 </html>
