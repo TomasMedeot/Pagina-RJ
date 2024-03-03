@@ -5,8 +5,9 @@
     "nav_b":"Sobre mi",
     "nav_c":"Testimonios",
     "nav_d":"Contacto",
+    "nav_e":"Servicios",
     "name":"Nombre",
-    "email":"Correo electronico",
+    "email":"Correo electrónico",
     "message":"Mensaje",
     "enviar":"Enviar",
     "contact_l":"Contacto",
@@ -32,7 +33,7 @@
     "text12":"Cámara Micrófono Conexión a internet",
     "text13":"Diversos estudios han demostrado que la psicoterapia online es igual de eficaz que la psicoterapia convencional. Al poder programar sesiones en los momentos más convenientes, permite recibir el apoyo necesario sin comprometer las responsabilidades diarias. La psicoterapia online es una manera efectiva de estar cerca sin importar la ubicación del psicoterapeuta y la persona consultante. Gracias a su accesibilidad, es posible sostener el proceso durante viajes temporales o traslados permanentes, sin cambiar de profesional.",
     "text14":"Psicología analítica",
-    "text15":"Utilizo el modelo teórico de la psicología analítica de Carl Jung, así como herramientas y técnicas concernientes a diferentes escuelas de la psicología, siempre que estas se dirijan a alcanzar nuestros objetivos terapéuticos específicos preestablecidos para dar respuesta a tu problemática, aliviando o disminuyendo los síntomas y su malestar. En sesiones semanales cara a cara, establecemos un vínculo profundo y transformador para comprender cómo los desafíos impactan en tu crecimiento. ",
+    "text15":"El estilo de la terapia puede incluir rasgos psicoeducativos, técnicas expresivas y actividades a realizar entre sesiones. Enfocando en tu proceso de individuación, te acompaño hacia el desarrollo pleno de tu personalidad, integrando Complejos, incorporando habilidades y explorando tu dimensión espiritual. Juntos, navegamos a través de miedos y deseos para lograr una visión integral de tu ser, arribar a una comprensión más profunda de ti mismo y garantizar un funcionamiento emocional equilibrado.",
     "text16":"Psicoterapia individual para adultos o adolescentes",
     "text17":"El objetivo es permitir a quien consulta, resolver por sí mismo (con mi ayuda como guía) los conflictos internos que trae a sesión, brindando herramientas y estrategias para modificarlos. Se busca desarmar patrones que interfieran en la vida de la persona que consulta, y en sus relaciones con los demás; también propiciando el autoconocimiento, la autoaceptación, y la sensación de plenitud y bienestar. Durante la primera sesión se realiza una evaluación diagnóstica de los temas expuestos, así como la construcción de un programa terapéutico. Las sesiones duran 45 minutos y suelen realizarse semanalmente. La duración total del proceso terapéutico es variable y depende de las necesidades y evolución del caso particular.",
     "text18":"Terapia de parejas",
@@ -40,6 +41,6 @@
     "text20":"Testimonios",
     "text21":"Ver mas",
     "text22":"Ver menos",
-    "text23":"El estilo de la terapia puede incluir rasgos psicoeducativos, técnicas expresivas y actividades a realizar entre sesiones. Enfocando en tu proceso de individuación, te acompaño hacia el desarrollo pleno de tu personalidad, integrando Complejos, incorporando habilidades y explorando tu dimensión espiritual.",
-    "text24":" Juntos, navegamos a través de miedos y deseos para lograr una visión integral de tu ser, arribar a una comprensión más profunda de ti mismo y garantizar un funcionamiento emocional equilibrado."
+    "text23":"Utilizo el modelo teórico de la psicología analítica de Carl Jung, así como herramientas y técnicas concernientes a diferentes escuelas de la psicología, siempre que estas se dirijan a alcanzar nuestros objetivos terapéuticos específicos preestablecidos para dar respuesta a tu problemática, aliviando o disminuyendo los síntomas y su malestar. ",
+    "text24":"En sesiones semanales cara a cara, establecemos un vínculo profundo y transformador para comprender cómo los desafíos impactan en tu crecimiento. "
 }

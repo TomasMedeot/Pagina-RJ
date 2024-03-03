@@ -230,6 +230,7 @@ a.español:before {
     border: none;
     border-radius: 80px; 
     background-color: #fff;
+    font-family: 'Poppins', sans-serif;
     color: #D66B52;
     font-size: x-large;
     font-weight: bold;
@@ -253,8 +254,8 @@ a.español:before {
 }
 .presentacion-b img{
     margin-right: 3%;
-    width: 152px;
-    height: 152px;
+    width: 10vh;
+    height: 10vh;
 }
 @media screen and (min-width: 1921px) {
     .presentacion-b{
@@ -329,7 +330,7 @@ a.español:before {
 .about_int_2 h5{
     margin: 0%;
     margin-right: 30px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     margin-bottom: 30px;
     letter-spacing: 3px;
@@ -337,11 +338,12 @@ a.español:before {
 .about_int_2 h6{
     margin: 0%;
     margin-right: 30px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     letter-spacing: 3px;
 }
 .boton{
+    font-family: 'Poppins', sans-serif;
     padding: 10px 20px; 
     border: none;
     border-radius: 80px; 
@@ -565,6 +567,7 @@ input[type="email"] {
     height: 55px !important;
 }
 .contact_form button {
+    font-family: 'Poppins', sans-serif;
     padding: 10px 20px; 
     border: none;
     border-radius: 80px; 
@@ -597,6 +600,7 @@ input[type="email"] {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    align-items: center;
 }
 .a-footer-image{
     display: flex;

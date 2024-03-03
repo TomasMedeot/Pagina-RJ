@@ -5,6 +5,7 @@
     "nav_b":"About me",
     "nav_c":"Testimonials",
     "nav_d":"Contact",
+    "nav_e":"Services",
     "name":"Name",
     "email":"Email",
     "message":"Message",
@@ -20,8 +21,8 @@
     "text1":"I dream of a world where people enjoy their lives in balance, and the importance of Mental Health is considered as part of our integral health.",
     "text2":"I have trained internationally in Argentina, Brazil, Spain and France, where I currently reside. From here, I propose a safe, neutral space, free of prejudice, where I accompany every day, processes of adolescents and adults from all over the world.",
     "consultar":"Consult",
-    "text3":"Specialties",
-    "text4":"Personal development - Change of life project - Difficulties in relationships - Work worries - Low self-esteem - Post-traumatic states - Anxiety disorders - Social Anxiety - Generalized Anxiety Disorder - Mood disorders - Depression - Emotion management - Communication skills training - Life crises - Relocation and migratory transition - Isolation and loneliness - Stress management",
+    "text3":"Specialities",
+    "text4":"Personal development - Change of life project - Difficulties in relationships - Work and vocational concerns - Low self-esteem - Post-traumatic states - Anxiety disorders - Social Anxiety - Generalized Anxiety Disorder - Mood disorders - Depression - Emotion management - Communication skills training - Life crises - Relocation and migratory transition - Isolation and loneliness - Stress management",
     "text5":"I guide you towards the ",
     "text6":"Full development of your personality",
     "text7":"Online Psychotherapy",
@@ -32,7 +33,7 @@
     "text12":"Camera Microphone Internet connection",
     "text13":"Several studies have shown that online psychotherapy is just as effective as conventional psychotherapy. By being able to schedule sessions at the most convenient times, it allows you to receive the necessary support without compromising daily responsibilities. Online psychotherapy is an effective way to be close regardless of the location of the psychotherapist and the person being consulted. Thanks to its accessibility, it is possible to sustain the process during temporary trips or permanent transfers, without changing professionals.",
     "text14":"Analytical Psychology",
-    "text15":"I use Carl Jung's theoretical model of analytical psychology, as well as tools and techniques concerning different schools of psychology, as long as they are aimed at achieving our specific pre-established therapeutic objectives to respond to your problem, alleviating or reducing symptoms and discomfort.",
+    "text15":"The style of therapy may include psychoeducational traits, expressive techniques, and activities to be performed between sessions. Focusing on your process of individuation, I accompany you towards the full development of your personality, integrating Complexes, incorporating skills and exploring your spiritual dimension. Together, we navigate through fears and desires to achieve a holistic view of your being, arrive at a deeper understanding of yourself, and ensure balanced emotional functioning.",
     "text16":"Individual psychotherapy for adults or adolescents",
     "text17":"The objective is to allow the person who consults to resolve by themselves (with my help as a guide) the internal conflicts that they bring to the session, providing tools and strategies to modify them. It seeks to dismantle patterns that interfere in the life of the person consulting, and in their relationships with others; It also promotes self-knowledge, self-acceptance, and the feeling of fulfillment and well-being. During the first session, a diagnostic evaluation of the topics presented is carried out, as well as the construction of a therapeutic program. Sessions last 45 minutes and are usually held weekly. The total duration of the therapeutic process is variable and depends on the needs and evolution of the particular case.",
     "text18":"Couples Therapy",
@@ -40,6 +41,6 @@
     "text20":"Testimonials",
     "text21":"Show more",
     "text22":"Show less",
-    "text23":" In weekly face-to-face sessions, we establish a deep and transformative bond to understand how challenges impact your growth. The style of therapy may include psychoeducational traits, expressive techniques, and activities to be performed between sessions. Focusing on your process of individuation, I accompany you towards the full development of your personality, integrating Complexes, incorporating skills and exploring your spiritual dimension. ",
-    "text24":"Together, we navigate through fears and desires to achieve a holistic view of your being, arrive at a deeper understanding of yourself, and ensure balanced emotional functioning."
+    "text23":"I use Carl Jung's theoretical model of analytical psychology, as well as tools and techniques concerning different schools of psychology, as long as they are aimed at achieving our specific pre-established therapeutic objectives to respond to your problem, alleviating or reducing symptoms and discomfort.",
+    "text24":"In weekly face-to-face sessions, we establish a deep and transformative bond to understand how challenges impact your growth."
 }

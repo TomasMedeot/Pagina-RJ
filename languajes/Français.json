@@ -5,6 +5,7 @@
     "nav_b":"À propos de moi",
     "nav_c":"Témoignages",
     "nav_d":"Contact",
+    "nav_e":"Services",
     "name":"Nom",
     "email":"Courrier électronique",
     "message":"Message",
@@ -32,7 +33,7 @@
     "text12":"Caméra Microphone Connexion Internet",
     "text13":"Diverses études ont montré que la psychothérapie en ligne est tout aussi efficace que la psychothérapie conventionnelle. Pouvoir planifier des séances aux moments les plus opportuns vous permet de recevoir le soutien nécessaire sans compromettre vos responsabilités quotidiennes. La psychothérapie en ligne est un moyen efficace d'être proche quelle que soit la localisation du psychothérapeute et de la personne consultante. Grâce à son accessibilité, il est possible de pérenniser la démarche lors de déplacements temporaires ou de mutations définitives, sans changer de professionnel.",
     "text14":"Psychologie analytique",
-    "text15":"J'utilise le modèle théorique de psychologie analytique de Carl Jung, ainsi que des outils et techniques relatifs à différentes écoles de psychologie, dans la mesure où ceux-ci visent à atteindre nos objectifs thérapeutiques spécifiques préétablis pour répondre à votre problème, en atténuant ou en réduisant les symptômes et son inconfort. ",
+    "text15":"Le style de thérapie peut inclure des traits psychoéducatifs, des techniques d'expression et des activités à effectuer entre les séances. En me concentrant sur votre processus d'individuation, je vous accompagne vers le plein développement de votre personnalité, en intégrant des Complexes, en incorporant des compétences et en explorant votre dimension spirituelle. Ensemble, nous naviguons à travers les peurs et les désirs pour parvenir à une vision holistique de votre être, parvenir à une compréhension plus profonde de vous-même et assurer un fonctionnement émotionnel équilibré.",
     "text16":"Psychothérapie individuelle pour adultes ou adolescents",
     "text17":"L'objectif est de permettre à la personne qui consulte de résoudre elle-même (avec mon aide comme guide) les conflits internes qu'elle apporte à la séance, en lui fournissant des outils et des stratégies pour les modifier. Il cherche à démanteler les schémas qui interfèrent dans la vie de la personne qui consulte et dans ses relations avec les autres ; favorisant également la connaissance de soi, l’acceptation de soi et un sentiment d’épanouissement et de bien-être. Lors de la première séance, une évaluation diagnostique des thèmes présentés est réalisée, ainsi que la construction d'un programme thérapeutique. Les séances durent 45 minutes et ont généralement lieu chaque semaine. La durée totale du processus thérapeutique est variable et dépend des besoins et de l'évolution du cas particulier.",
     "text18":"Thérapie de couple",
@@ -40,6 +41,6 @@
     "text20":"Témoignages",
     "text21":"Voir plus",
     "text22":"Voir moins",
-    "text23":"Lors de séances hebdomadaires en face-à-face, nous établissons un lien profond et transformateur pour comprendre comment les défis impactent votre croissance. Le style de thérapie peut inclure des éléments psychoéducatifs, des techniques d'expression et des activités à faire entre les séances. En me concentrant sur votre processus d'individuation, je vous accompagne vers le plein développement de votre personnalité, en intégrant les Complexes, en incorporant les compétences et en explorant votre dimension spirituelle.",
-    "text24":"Ensemble, nous naviguons à travers les peurs et les désirs pour parvenir à une vision holistique de votre être, parvenir à une compréhension plus profonde de vous-même et assurer un fonctionnement émotionnel équilibré."
+    "text23":"J'utilise le modèle théorique de la psychologie analytique de Carl Jung, ainsi que des outils et des techniques concernant différentes écoles de psychologie, tant qu'ils visent à atteindre nos objectifs thérapeutiques spécifiques préétablis pour répondre à votre problème, soulager ou réduire les symptômes et l'inconfort.",
+    "text24":"Lors de séances hebdomadaires en face à face, nous établissons un lien profond et transformateur pour comprendre comment les défis ont un impact sur votre croissance."
 }

@@ -40,14 +40,17 @@ document.querySelectorAll('.language ul li a').forEach(function(element) {
             .then(data => {
                 lang = data;
             document.getElementById('title').innerText = data.title;
+            document.getElementById('title2').innerText = data.title;
             document.getElementById('nav-a').innerText = data.nav_a;
             document.getElementById('nav-b').innerText = data.nav_b;
             document.getElementById('nav-c').innerText = data.nav_c;
             document.getElementById('nav-d').innerText = data.nav_d;
+            document.getElementById('nav-e').innerText = data.nav_e;
             document.getElementById('nav-a2').innerText = data.nav_a;
             document.getElementById('nav-b2').innerText = data.nav_b;
             document.getElementById('nav-c2').innerText = data.nav_c;
             document.getElementById('nav-d2').innerText = data.nav_d;
+            document.getElementById('nav-e2').innerText = data.nav_e;
             document.getElementById('contact_l').innerText = data.contact_l;
             document.getElementById('name').innerText = data.name;
             document.getElementById('email_t').innerText = data.email;
