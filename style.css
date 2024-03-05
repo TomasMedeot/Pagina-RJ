@@ -193,6 +193,7 @@ a.español:before {
 .presentacion{
     background-color: #EA7B61;
     /*height: 800px;*/
+    margin-top: 60px;
     height: 62vh;
     display: flex;
     flex-direction: column;
