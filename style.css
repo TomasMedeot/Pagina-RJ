@@ -106,7 +106,7 @@ body {
     margin-right: 10px;
 }
 
-a.français:before {
+a.francais:before {
     background-image: url(./images/fr.webp);
 }
 a.english:before {
