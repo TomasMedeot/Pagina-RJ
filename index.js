@@ -7,7 +7,6 @@ function load_lang(){
     fetch(`languajes/español.json`)
     .then(response => response.json())
     .then(data => {lang = data;});
-    console.log(lang)
 }
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -119,7 +118,6 @@ function setLanguageSelectedBackground(imageName) {
         languageSelectedElement2.className='language-selected-'+imageName
     };
 let lastScrollTop = 0;
-console.log("Scroll event added");
 window.addEventListener('scroll', function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
@@ -276,9 +274,9 @@ function updateDots() {
     if (item.offsetLeft <= scrollPos + carousel.clientWidth / 2) {
       activeDotIndex = index;
     }
-  });
+});
   
-  const dots = document.querySelectorAll('.dot');
+const dots = document.querySelectorAll('.dot');
   dots.forEach((dot, index) => {
     if (index === activeDotIndex) {
       dot.classList.add('active');
@@ -303,16 +301,17 @@ function createDots() {
   });
 }
 createDots();
-  document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function() {
     const testimonialCarousel = document.querySelector('.testimonial-carousel');
-    const dotsContainer = document.querySelector('.testimonial-carousel-dots');
+    const dotsContainer2 = document.querySelector('.testimonial-carousel-dots');
     testimonialCarousel.addEventListener('scroll', updateTestimonialDots);
     function updateTestimonialDots() {
       const scrollPos = testimonialCarousel.scrollLeft;
       const carouselWidth = testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth;
       const scrollPercentage = (scrollPos / carouselWidth) * 100;
-      const activeDotIndex = Math.round(scrollPercentage / 100 * (dotsContainer.children.length - 1));
-      const dots = document.querySelectorAll('.dot');
+      const activeDotIndex = Math.round(scrollPercentage / 100 * (dotsContainer2.children.length - 1));
+      const dots = document.querySelectorAll('.dot2');
       dots.forEach((dot, index) => {
         if (index === activeDotIndex) {
           dot.classList.add('active');
@@ -325,12 +324,12 @@ createDots();
       const testimonialItems = document.querySelectorAll('.testimonial-carousel-item');
       testimonialItems.forEach((item, index) => {
         const dot = document.createElement('div');
-        dot.classList.add('dot');
+        dot.classList.add('dot2');
         dot.addEventListener('click', () => {
-          const scrollPos = (testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth) / (dotsContainer.children.length - 1) * index;
+          const scrollPos = (testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth) / (dotsContainer2.children.length - 1) * index;
           testimonialCarousel.scrollLeft = scrollPos;
         });
-        dotsContainer.appendChild(dot);
+        dotsContainer2.appendChild(dot);
       });
     }
     createTestimonialDots();

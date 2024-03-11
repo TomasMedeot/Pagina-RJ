@@ -486,7 +486,7 @@ a.español:before {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    width: 32%;
+    width: 75%;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
@@ -512,7 +512,19 @@ display: inline-block;
 margin: 0 5px;
 cursor: pointer;
 }
+.dot2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    }
 .dot.active {
+    background-color: #333;
+}
+.dot2.active {
     background-color: #333;
 }
 .h1-img {
@@ -1033,22 +1045,33 @@ input[type="email"] {
 .testimonial-carousel-container {
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
+    width: 90%;
 }
 .testimonial-carousel {
     display: flex;
     overflow-x: auto;
+    transition: transform 0.5s ease;
     scrollbar-color: white transparent;
 }
 .testimonial-carousel-item {
     flex: 0 0 auto;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
     margin-top: 2%;
     margin-bottom: 3%;
+    min-height: 300px;
 }  
+.testimonial-carousel-item h3{
+    font-size: 25px !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
 .testimonial-carousel-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
