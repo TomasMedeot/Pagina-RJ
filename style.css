@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+.carousel{
+    display: none;
+}
 .language {
     background-color: #EA7B61;
     height: 100%;
@@ -165,7 +168,7 @@ a.español:before {
     justify-content: center;
 }
 .logo-b h3{
-    margin: 0%;
+    margin: 0;
     font-family: 'Rozha One', sans-serif;
 }
 .logo-b h5{
@@ -488,6 +491,30 @@ a.español:before {
     align-items: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
+.carousel-dots {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-dots2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+.dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #ccc;
+display: inline-block;
+margin: 0 5px;
+cursor: pointer;
+}
+.dot.active {
+    background-color: #333;
+}
 .h1-img {
     display: flex;
     flex-direction: row;
@@ -785,6 +812,12 @@ input[type="email"] {
     }
 }
 @media screen and (max-width: 770px) {
+    .carousel-dots{
+        display: block;
+    }
+    .carousel-dots2{
+        display: none;
+    }
     .presentacion{
         margin-top: 80px;
     }
@@ -820,9 +853,18 @@ input[type="email"] {
     .carousel {
         display: flex;
         overflow-x: auto;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory; 
         width: 100%;
+        scrollbar-color: white transparent;
     }
+    .carousel-container {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        scrollbar-color: white transparent;
+      }
+      
     .slide {
         flex: 0 0 auto;
         display: flex;
@@ -927,7 +969,7 @@ input[type="email"] {
         font-size: 50px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
     .presentacion-a-a{
         font-weight: 200;
         font-size: 35px;
@@ -987,4 +1029,26 @@ input[type="email"] {
         width: 40px;
         height: 40px;
     }
+}
+.testimonial-carousel-container {
+    position: relative;
+    overflow-x: hidden;
+}
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: white transparent;
+}
+.testimonial-carousel-item {
+    flex: 0 0 auto;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}  
+.testimonial-carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap">
 </head>
 <body>
-    <!--NAV BAR-->
     <div>
         <nav class="nav-resp">
             <div class="div-logo">
@@ -40,7 +39,7 @@
             <div class="sidebar" id="sidebar">
                 <div class="container">
                     <button onclick="hideSidebar()">X</button>
-                    <a id="nav-a" href="#presentacion">Inicio</a>
+                    <a id="nav-a" href="#">Inicio</a>
                     <a id="nav-b" href="#about">Sobre mi</a>
                     <a id="nav-e" href="#body_esp">Servicios</a>
                     <a id="nav-c" href="#testimonios2">Testimonios</a>
@@ -60,7 +59,7 @@
                 </div>
             </div>
             <div class="navbar-buttons">
-                <a id="nav-a2" href="#presentacion">Inicio</a>
+                <a id="nav-a2" href="#">Inicio</a>
                 <a id="nav-b2" href="#about">Sobre mi</a>
                 <a id="nav-e2" href="#body_esp">Servicios</a>
                 <a id="nav-c2" href="#testimonios">Testimonios</a>
@@ -81,9 +80,6 @@
             </div>
         </nav>
     </div>
-    <!--NAV BAR-->
-
-    <!--PRESENTACION-->
     <div id="presentacion" class="presentacion">
         <div class="presentacion-a">
             <p>
@@ -101,9 +97,6 @@
             </a>
         </div>
     </div>
-    <!--PRESENTACION-->
-
-    <!--ABOUT-->
     <div id="about"></div>
     <div class="about">
         <div class="about_int">
@@ -116,20 +109,16 @@
             </div>
         </div>
     </div>
-    <!--ABOUT-->
-    <!--BODY-->
     <div class="body">
         <div id="body_esp" class="body-esp">
             <h1 id="text3">Especialidades</h1>
             <h5 id="text4">Desarrollo personal - Cambio de proyecto de vida - Dificultades en vínculos - Preocupaciones laborales - Baja autoestima - Estados postraumáticos - Trastornos de ansiedad - Ansiedad Social - Trastorno de Ansiedad Generalizada - Trastornos del estado del ánimo - Depresión - Gestión de las emociones - Entrenamiento en habilidades comunicativas - Crisis vitales - Reubicación y transición migratoria - Aislamiento y soledad - Manejo del estrés</h5>
         </div>
     </div>
-    <!--BODY-->
-    <!--DATA-->
     <div class="data">
         <div class="data-online">
             <div class="data-online-a">
-                <h1 id="text7">Psicoterapia online</h1>
+                <h1 id="text7">Psicoterapia online en inglés, francés o español</h1>
                 <h3 id="text8">Videollamada en tiempo real</h3>
                 <div class="data-online">
                     <div class="data-online-a-b" style="align-items: center; margin-left: 0px;">
@@ -185,48 +174,13 @@
             </div>
         </div>
     </div>
-
-    <!--DATA-->
-    <!--TESTIMONIOS-->
     <div id="testimonios" class="testimonios">
         <h1 id="text20">Testimonios</h1>
-        <div class="testimonios-a">
-            <div class="testimonios-a-a">
-                <div class="h1-img">
-                    <h1>John</h1>
-                    <img src="./images/uk.webp" alt="uk">
-                </div>
-                <h3>
-                    "Ms. Juarez is more than a therapist, she is an exceptional guide on the path to recovery. Her genuine concern and compassion were instrumental in overcoming my struggle with depression. Thanks to her support, I have rediscovered joy in my life and have tools to face difficult times. I highly recommend her services". 
-                </h3>
-            </div>
-            <div class="testimonios-a-a">
-                <div class="h1-img">
-                    <h1>Andrés</h1>
-                    <img src="./images/es.webp" alt="uk">
-                </div>
-                <h3>
-                    "Expreso mi agradecimiento a la licenciada Juarez por su dedicación y habilidades excepcionales. Desde el primer momento en que inicié el proceso psicoterapéutico con ella, sentí una conexión auténtica y un compromiso genuino hacia mi bienestar. Con su ayuda, logré aliviar el estrés laboral que parecía abrumador en mi vida, en un espacio seguro donde pude explorar mis pensamientos, sentimientos y emociones de manera profunda y significativa. Gracias por cambiar no solo mi perspectiva, sino también mi capacidad para enfrentar los desafíos con resiliencia y claridad".
-                </h3>
-            </div>
-            <div class="testimonios-a-a">
-                <div class="h1-img">
-                    <h1>Élodie</h1>
-                    <img src="./images/fr.webp" alt="uk">
-                </div>
-                <h3>
-                    "Je suis extrêmement reconnaissante pour la chaleur et l'empathie que j'ai trouvées chez Romina. Leur approche humaine a rendu chaque séance très confortable pour moi. Grâce à leurs conseils, j'ai réussi à surmonter mes problèmes d'anxiété qui m'affectaient au quotidien. Aujourd'hui, je me sens fort et plus équilibré. J'ai de nouveaux outils pour affronter les hauts et les bas de la vie. Merci !" 
-                </h3>
-            </div>
-        </div>
-    </div>
-    <div id="testimonios2" class="testimonios2">
-        <div class="testimonios2-a">
-            <h1 id="text21">Testimonios</h1>
-        </div>
-        <div class="carousel">
-            <div class="slide">
-                <div class="testimonios-a-a">
+
+
+        <div class="testimonial-carousel-container">
+            <div class="testimonial-container testimonial-carousel">
+                <div class="testimonios-a-a testimonial-carousel-item">
                     <div class="h1-img">
                         <h1>John</h1>
                         <img src="./images/uk.webp" alt="uk">
@@ -235,9 +189,8 @@
                         "Ms. Juarez is more than a therapist, she is an exceptional guide on the path to recovery. Her genuine concern and compassion were instrumental in overcoming my struggle with depression. Thanks to her support, I have rediscovered joy in my life and have tools to face difficult times. I highly recommend her services". 
                     </h3>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="testimonios-a-a">
+
+                <div class="testimonios-a-a testimonial-carousel-item">
                     <div class="h1-img">
                         <h1>Andrés</h1>
                         <img src="./images/es.webp" alt="uk">
@@ -246,22 +199,128 @@
                         "Expreso mi agradecimiento a la licenciada Juarez por su dedicación y habilidades excepcionales. Desde el primer momento en que inicié el proceso psicoterapéutico con ella, sentí una conexión auténtica y un compromiso genuino hacia mi bienestar. Con su ayuda, logré aliviar el estrés laboral que parecía abrumador en mi vida, en un espacio seguro donde pude explorar mis pensamientos, sentimientos y emociones de manera profunda y significativa. Gracias por cambiar no solo mi perspectiva, sino también mi capacidad para enfrentar los desafíos con resiliencia y claridad".
                     </h3>
                 </div>
-            </div>
-            <div class="slide"> <div class="testimonios-a-a">
-                <div class="h1-img">
-                    <h1>Élodie</h1>
-                    <img src="./images/fr.webp" alt="uk">
-                </div>
-                <h3>
-                    "Je suis extrêmement reconnaissante pour la chaleur et l'empathie que j'ai trouvées chez Romina. Leur approche humaine a rendu chaque séance très confortable pour moi. Grâce à leurs conseils, j'ai réussi à surmonter mes problèmes d'anxiété qui m'affectaient au quotidien. Aujourd'hui, je me sens fort et plus équilibré. J'ai de nouveaux outils pour affronter les hauts et les bas de la vie. Merci !" 
-                </h3>
-            </div></div>
-            <!-- Agrega más slides según sea necesario -->
-          </div>
-    </div>
-    <!--TESTIMONIOS-->
 
-    <!--FOOTER-->
+                <div class="testimonios-a-a testimonial-carousel-item">
+                    <div class="h1-img">
+                        <h1>Élodie</h1>
+                        <img src="./images/fr.webp" alt="uk">
+                    </div>
+                    <h3>
+                        "Je suis extrêmement reconnaissante pour la chaleur et l'empathie que j'ai trouvées chez Romina. Leur approche humaine a rendu chaque séance très confortable pour moi. Grâce à leurs conseils, j'ai réussi à surmonter mes problèmes d'anxiété qui m'affectaient au quotidien. Aujourd'hui, je me sens fort et plus équilibré. J'ai de nouveaux outils pour affronter les hauts et les bas de la vie. Merci !" 
+                    </h3>
+                </div>
+
+                <div class="testimonios-a-a testimonial-carousel-item">
+                    <div class="h1-img">
+                        <h1>Cecilia</h1>
+                            <img src="./images/ar.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Agradezco a la Lic. Juarez, excelente profesional y persona, por ayudar a reconstruirme en cada sesión, por transformar mis miedos y angustias en aprendizajes y valorar mis avances durante el proceso. Devoluciones muy asertivas que son tareas para la próxima sesión. Sin dudas, super recomendable. Gracias Romi por acompañarme y enseñarme a ser mejor"
+                        </h3>
+                </div>
+
+                <div class="testimonios-a-a testimonial-carousel-item">
+                    <div class="h1-img">
+                        <h1>Candela</h1>
+                            <img src="./images/ar.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Mi proceso de acompañamiento psicoterapéutico junto a la Lic. Romina Juárez fue sumamente fructífero en términos de crecimiento personal. Me sentí muy contenida entendiendo que todo proceso terapéutico es un trayecto compartido, construido entre dos. Me ayudó a poder desentrañar algunos patrones que regían mis maneras de relacionarme y mis maneras de comprender la realidad que me rodea. Al finalizar el proceso, me di cuenta de que logré construir herramientas realmente valiosas y que me pueden ayudar a interpretar las cosas que me suceden de una manera diferente y, consecuentemente, a reaccionar de maneras más sanas frente a diferentes eventualidades del cotidiano".
+                        </h3>
+                </div>
+
+                <div class="testimonios-a-a testimonial-carousel-item">
+                    <div class="h1-img">
+                        <h1>Agustín</h1>
+                            <img src="./images/it.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Tengo 26 años e hice mi proceso terapéutico con la lic. Juárez.  Estoy muy agradecido con su acompañamiento en mi proceso, empecé en un momento de mi vida donde estaba saliendo de una relación y en pleno proceso migratorio. Me fue de gran ayuda para ordenar mis emociones y observarlas con claridad, para poder valorarme y tomar acciones tanto en las cosas que ya no quería en mi vida como en poner foco en las cuales quería lograr. Recomiendo confiar en ella, sobre todo si estás buscando una persona que comunique las cosas con amabilidad y cariño, ya que es súper atenta y sensible a la hora de trabajar tus conflictos. Soy una persona que en general le cuesta abrirse y con ella sentí comodidad desde el primer momento, sin duda volvería a confiar en ella para afrontar nuevos desafíos"
+                        </h3>
+                </div>
+                
+            </div>
+            <div class="testimonial-carousel-dots"></div>
+        </div>
+    </div>
+    <div id="testimonios2" class="testimonios2">
+        <div class="testimonios2-a">
+            <h1 id="text21">Testimonios</h1>
+        </div>
+
+        </div class="carousel-container">
+            <div class="carousel">
+                <div class="slide">
+                    <div class="testimonios-a-a">
+                        <div class="h1-img">
+                            <h1 style="margin-bottom: 10px; margin-top: 10px;">Andrés</h1>
+                            <img src="./images/es.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Expreso mi agradecimiento a la licenciada Juarez por su dedicación y habilidades excepcionales. Desde el primer momento en que inicié el proceso psicoterapéutico con ella, sentí una conexión auténtica y un compromiso genuino hacia mi bienestar. Con su ayuda, logré aliviar el estrés laboral que parecía abrumador en mi vida, en un espacio seguro donde pude explorar mis pensamientos, sentimientos y emociones de manera profunda y significativa. Gracias por cambiar no solo mi perspectiva, sino también mi capacidad para enfrentar los desafíos con resiliencia y claridad".
+                        </h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonios-a-a">
+                        <div class="h1-img">
+                            <h1 style="margin-bottom: 10px; margin-top: 10px;">Cecilia</h1>
+                            <img src="./images/ar.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Agradezco a la Lic. Juarez, excelente profesional y persona, por ayudar a reconstruirme en cada sesión, por transformar mis miedos y angustias en aprendizajes y valorar mis avances durante el proceso. Devoluciones muy asertivas que son tareas para la próxima sesión. Sin dudas, super recomendable. Gracias Romi por acompañarme y enseñarme a ser mejor"
+                        </h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonios-a-a">
+                        <div class="h1-img">
+                            <h1 style="margin-bottom: 10px; margin-top: 10px;">Agustín</h1>
+                            <img src="./images/it.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Tengo 26 años e hice mi proceso terapéutico con la lic. Juárez.  Estoy muy agradecido con su acompañamiento en mi proceso, empecé en un momento de mi vida donde estaba saliendo de una relación y en pleno proceso migratorio. Me fue de gran ayuda para ordenar mis emociones y observarlas con claridad, para poder valorarme y tomar acciones tanto en las cosas que ya no quería en mi vida como en poner foco en las cuales quería lograr. Recomiendo confiar en ella, sobre todo si estás buscando una persona que comunique las cosas con amabilidad y cariño, ya que es súper atenta y sensible a la hora de trabajar tus conflictos. Soy una persona que en general le cuesta abrirse y con ella sentí comodidad desde el primer momento, sin duda volvería a confiar en ella para afrontar nuevos desafíos"
+                        </h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonios-a-a">
+                        <div class="h1-img">
+                            <h1 style="margin-bottom: 10px; margin-top: 10px;">John</h1>
+                            <img src="./images/uk.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Ms. Juarez is more than a therapist, she is an exceptional guide on the path to recovery. Her genuine concern and compassion were instrumental in overcoming my struggle with depression. Thanks to her support, I have rediscovered joy in my life and have tools to face difficult times. I highly recommend her services". 
+                        </h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonios-a-a">
+                        <div class="h1-img">
+                            <h1 style="margin-bottom: 10px; margin-top: 10px;">Candela</h1>
+                            <img src="./images/ar.webp" alt="uk">
+                        </div>
+                        <h3>
+                            "Mi proceso de acompañamiento psicoterapéutico junto a la Lic. Romina Juárez fue sumamente fructífero en términos de crecimiento personal. Me sentí muy contenida entendiendo que todo proceso terapéutico es un trayecto compartido, construido entre dos. Me ayudó a poder desentrañar algunos patrones que regían mis maneras de relacionarme y mis maneras de comprender la realidad que me rodea. Al finalizar el proceso, me di cuenta de que logré construir herramientas realmente valiosas y que me pueden ayudar a interpretar las cosas que me suceden de una manera diferente y, consecuentemente, a reaccionar de maneras más sanas frente a diferentes eventualidades del cotidiano".
+                        </h3>
+                    </div>
+                </div>
+                <div class="slide"> <div class="testimonios-a-a">
+                    <div class="h1-img">
+                        <h1 style="margin-bottom: 10px; margin-top: 10px;">Élodie</h1>
+                        <img src="./images/fr.webp" alt="uk">
+                    </div>
+                    <h3>
+                        "Je suis extrêmement reconnaissante pour la chaleur et l'empathie que j'ai trouvées chez Romina. Leur approche humaine a rendu chaque séance très confortable pour moi. Grâce à leurs conseils, j'ai réussi à surmonter mes problèmes d'anxiété qui m'affectaient au quotidien. Aujourd'hui, je me sens fort et plus équilibré. J'ai de nouveaux outils pour affronter les hauts et les bas de la vie. Merci !" 
+                    </h3>
+                </div></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>
+    <div class="carousel-dots"></div>
     <div id="contact" class="contact">
         <div class="contact_form">
             <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScSgcsTbCcbUL4chOEH5O1hvF24HeQp5jE5GYda9k8XuwIDQg/formResponse" method="post">
@@ -303,7 +362,6 @@
             </div>
         </div>
     </div>
-    <!--FOOTER-->
     <script src='index.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script>

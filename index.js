@@ -12,11 +12,19 @@ function load_lang(){
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
-        setTimeout(hideSidebar(), 1000);
+        const href = this.getAttribute('href');
+        if (href === '#') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            const target = document.querySelector(href);
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        setTimeout(hideSidebar, 1000);
     });
 });
 const mensaje = document.getElementById('mensaje');
@@ -253,3 +261,77 @@ window.addEventListener('scroll', function() {
 window.addEventListener('resize', function() {
     initialOffset = element.offsetTop;
 });
+
+const carousel = document.querySelector('.carousel');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+carousel.addEventListener('scroll', updateDots);
+
+function updateDots() {
+  const carouselItems = document.querySelectorAll('.slide');
+  const scrollPos = carousel.scrollLeft;
+  let activeDotIndex = 0;
+  
+  carouselItems.forEach((item, index) => {
+    if (item.offsetLeft <= scrollPos + carousel.clientWidth / 2) {
+      activeDotIndex = index;
+    }
+  });
+  
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, index) => {
+    if (index === activeDotIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+function createDots() {
+  const carouselItems = document.querySelectorAll('.slide');
+  
+  carouselItems.forEach((item, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) {
+      dot.classList.add('active');
+    }
+    dot.addEventListener('click', () => {
+      carousel.scrollLeft = item.offsetLeft;
+    });
+    dotsContainer.appendChild(dot);
+  });
+}
+createDots();
+  document.addEventListener("DOMContentLoaded", function() {
+    const testimonialCarousel = document.querySelector('.testimonial-carousel');
+    const dotsContainer = document.querySelector('.testimonial-carousel-dots');
+    testimonialCarousel.addEventListener('scroll', updateTestimonialDots);
+    function updateTestimonialDots() {
+      const scrollPos = testimonialCarousel.scrollLeft;
+      const carouselWidth = testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth;
+      const scrollPercentage = (scrollPos / carouselWidth) * 100;
+      const activeDotIndex = Math.round(scrollPercentage / 100 * (dotsContainer.children.length - 1));
+      const dots = document.querySelectorAll('.dot');
+      dots.forEach((dot, index) => {
+        if (index === activeDotIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+    function createTestimonialDots() {
+      const testimonialItems = document.querySelectorAll('.testimonial-carousel-item');
+      testimonialItems.forEach((item, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => {
+          const scrollPos = (testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth) / (dotsContainer.children.length - 1) * index;
+          testimonialCarousel.scrollLeft = scrollPos;
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+    createTestimonialDots();
+  });
