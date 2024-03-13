@@ -160,14 +160,19 @@ function hideSidebar() {
 document.addEventListener("DOMContentLoaded", function() {
     var botonToggle = document.getElementById("boton-toggle");
     var textoLargo = document.getElementById("text15");
-
+    var textoLargo2 = document.getElementById("text22");
+    var textoLargo3 = document.getElementById("text23");
     botonToggle.addEventListener("click", function() {
         if (textoLargo.style.maxHeight) {
             textoLargo.style.maxHeight = null;
+            textoLargo2.style.maxHeight = null;
+            textoLargo3.style.maxHeight = null;
             button1="0";
             update_button(botonToggle,lang,button1);
         } else {
             textoLargo.style.maxHeight = textoLargo.scrollHeight + "px";
+            textoLargo2.style.maxHeight = textoLargo.scrollHeight + "px";
+            textoLargo3.style.maxHeight = textoLargo.scrollHeight + "px";
             button1="1";
             update_button(botonToggle,lang,button1);
         }
@@ -208,7 +213,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     var botonToggle = document.getElementById("boton-toggle4");
     var textoLargo = document.getElementById("text13");
-
     botonToggle.addEventListener("click", function() {
         if (textoLargo.style.maxHeight) {
             textoLargo.style.maxHeight = null; 
@@ -259,24 +263,23 @@ window.addEventListener('scroll', function() {
 window.addEventListener('resize', function() {
     initialOffset = element.offsetTop;
 });
-
 const carousel = document.querySelector('.carousel');
 const dotsContainer = document.querySelector('.carousel-dots');
-
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+prevButton.addEventListener('click', scrollToPrev);
+nextButton.addEventListener('click', scrollToNext);
 carousel.addEventListener('scroll', updateDots);
-
 function updateDots() {
   const carouselItems = document.querySelectorAll('.slide');
   const scrollPos = carousel.scrollLeft;
-  let activeDotIndex = 0;
-  
+  let activeDotIndex = 0; 
   carouselItems.forEach((item, index) => {
     if (item.offsetLeft <= scrollPos + carousel.clientWidth / 2) {
       activeDotIndex = index;
     }
-});
-  
-const dots = document.querySelectorAll('.dot');
+  });
+  const dots = document.querySelectorAll('.dot');
   dots.forEach((dot, index) => {
     if (index === activeDotIndex) {
       dot.classList.add('active');
@@ -287,7 +290,6 @@ const dots = document.querySelectorAll('.dot');
 }
 function createDots() {
   const carouselItems = document.querySelectorAll('.slide');
-  
   carouselItems.forEach((item, index) => {
     const dot = document.createElement('div');
     dot.classList.add('dot');
@@ -300,18 +302,61 @@ function createDots() {
     dotsContainer.appendChild(dot);
   });
 }
+function scrollToPrev() {
+  const carouselItems = document.querySelectorAll('.slide');
+  const scrollPos = carousel.scrollLeft;
+  let targetIndex = 0;
+  carouselItems.forEach((item, index) => {
+    if (item.offsetLeft < scrollPos) {
+      targetIndex = index;
+    }
+  });
+  const targetItem = carouselItems[targetIndex];
+  carousel.scrollLeft = targetItem.offsetLeft;
+}
+function scrollToNext() {
+    const carouselItems = document.querySelectorAll('.slide');
+    const carouselWidth = carousel.clientWidth;
+    const scrollPos = carousel.scrollLeft;
+    const itemWidth = carouselItems[0].offsetWidth;
+    const currentIndex = Math.floor(scrollPos / itemWidth);  
+    if (currentIndex < carouselItems.length - 1) {
+      carousel.scrollLeft = (currentIndex + 1) * itemWidth;
+    }
+}
 createDots();
-
 document.addEventListener("DOMContentLoaded", function() {
     const testimonialCarousel = document.querySelector('.testimonial-carousel');
-    const dotsContainer2 = document.querySelector('.testimonial-carousel-dots');
+    const prevButton = document.querySelector('.prev-testimonial-button');
+    const nextButton = document.querySelector('.next-testimonial-button');
+    let isButtonDisabled = false;
+    prevButton.addEventListener('click', () => {
+      if (!isButtonDisabled) {
+        scrollToPrev();
+        disableButton();
+      }
+    });
+    nextButton.addEventListener('click', () => {
+      if (!isButtonDisabled) {
+        scrollToNext();
+        disableButton();
+      }
+    });
     testimonialCarousel.addEventListener('scroll', updateTestimonialDots);
     function updateTestimonialDots() {
-      const scrollPos = testimonialCarousel.scrollLeft;
-      const carouselWidth = testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth;
-      const scrollPercentage = (scrollPos / carouselWidth) * 100;
-      const activeDotIndex = Math.round(scrollPercentage / 100 * (dotsContainer2.children.length - 1));
       const dots = document.querySelectorAll('.dot2');
+      const activeDotIndex = Math.round(testimonialCarousel.scrollLeft / testimonialCarousel.clientWidth);
+      console.log(Math.round(testimonialCarousel.scrollLeft / testimonialCarousel.clientWidth));
+      if ((Math.round(testimonialCarousel.scrollLeft / testimonialCarousel.clientWidth))===0){
+        prevButton.classList.add('off')
+      }else{
+        prevButton.classList.remove('off')
+      }
+      if ((Math.round(testimonialCarousel.scrollLeft / testimonialCarousel.clientWidth))===5){
+        nextButton.classList.add('off')
+      }else{
+        nextButton.classList.remove('off')
+      }
       dots.forEach((dot, index) => {
         if (index === activeDotIndex) {
           dot.classList.add('active');
@@ -320,17 +365,27 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-    function createTestimonialDots() {
-      const testimonialItems = document.querySelectorAll('.testimonial-carousel-item');
-      testimonialItems.forEach((item, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot2');
-        dot.addEventListener('click', () => {
-          const scrollPos = (testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth) / (dotsContainer2.children.length - 1) * index;
-          testimonialCarousel.scrollLeft = scrollPos;
-        });
-        dotsContainer2.appendChild(dot);
-      });
+    function scrollToNext() {
+       
+      testimonialCarousel.scrollBy({ left: testimonialCarousel.clientWidth, behavior: 'smooth' });
     }
-    createTestimonialDots();
-  });
+    function scrollToPrev() {
+      testimonialCarousel.scrollBy({ left: -testimonialCarousel.clientWidth, behavior: 'smooth' });
+    }
+    function disableButton() {
+      isButtonDisabled = true;
+      setTimeout(() => {
+        isButtonDisabled = false;
+      }, 500);
+    }
+    const dotsContainer = document.createElement('div');
+    dotsContainer.classList.add('testimonial-carousel-dots');
+    testimonialCarousel.parentElement.appendChild(dotsContainer);
+  
+    for (let i = 0; i < 6; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot2');
+      dotsContainer.appendChild(dot);
+    }
+    updateTestimonialDots();
+});
