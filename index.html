@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div>
@@ -328,7 +329,7 @@
     
     <div id="contact" class="contact">
         <div class="contact_form">
-            <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScSgcsTbCcbUL4chOEH5O1hvF24HeQp5jE5GYda9k8XuwIDQg/formResponse" method="post">
+            <form class="form" id="form" method="get">
                 <label class="contact_l" id="contact_l" for="">Contacto</label>
                 <label id="name" for="name">Nombre</label>
                 <input id="name_2" type="text" id="nombre" name="entry.1716816010" placeholder="Escribe tu nombre" required>
@@ -339,8 +340,21 @@
                 <label id="message" for="message">Mensaje</label>
                 <textarea id="mensaje" name="entry.1519333857" maxlength="200" rows="4" required placeholder="Hola, quisiera consultar por.."></textarea>
                 <div class="contador" id="contador" for="">200</div>
-                <button id="enviar" type="submit">Enviar</button>
+                <div class="g-recaptcha" data-sitekey="6LceUCoqAAAAANEe9mP1ElHfRNo5GZC9FEG9OpaS" id="captcha"></div>
+                <button id="enviar">Enviar</button>
             </form>
+            <script>
+                document.getElementById('enviar').addEventListener('click', function() {
+                    if (grecaptcha.getResponse()) {
+                        var form = document.querySelector('form');
+                        form.setAttribute('action', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScSgcsTbCcbUL4chOEH5O1hvF24HeQp5jE5GYda9k8XuwIDQg/formResponse');
+                        form.setAttribute('method', 'post');
+                        document.getElementById('form').submit();
+                    } else {
+                        alert('Captcha fail');
+                    }
+                });
+            </script>
             <img src="./images/contact.webp" alt="">
         </div>
         <div class="contact_webs">
